@@ -14,22 +14,17 @@
 
 ## วิธีรัน test
 
-### ใช้ Maven
+### แบบง่าย (ไม่ต้องติดตั้งอะไร)
 ```bash
-# Run tests
+# Windows (PowerShell)
+.\run-tests.bat
+
+# หรือรันแบบ manual
+javac IsPrime.java TestRunner.java
+java TestRunner
+```
+
+### ใช้ Maven (ถ้ามี)
+```bash
 mvn test
-
-# Clean and run tests
-mvn clean test
 ```
-
-### ใช้ Command Line (ไม่มี Maven)
-```bash
-# Compile
-javac -cp ".;junit-platform-console-standalone-1.10.1.jar" IsPrime.java IsPrimeTest.java
-
-# Run tests
-java -jar junit-platform-console-standalone-1.10.1.jar --class-path . --scan-class-path
-```
-
-**หมายเหตุ:** ต้องมี Maven หรือ JUnit JAR file เพื่อรัน tests
