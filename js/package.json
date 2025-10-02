@@ -1,0 +1,11 @@
+{
+  "name": "prime-checker-js",
+  "version": "1.0.0",
+  "description": "Prime number checker logic test",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
